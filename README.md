@@ -1,4 +1,4 @@
-# /sample roku app
+# SAMPLE ROKU APP
 To build the project please type
 
     npm install
