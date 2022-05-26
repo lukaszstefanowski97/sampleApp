@@ -1,0 +1,34 @@
+{
+	"name": "customer-roku",
+	"version": "0.11.2",
+	"license": "UNLICENSED",
+	"private": true,
+	"scripts": {
+		"deploy": "node ./rokuDeploy.js"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": ".scripts/analyze.sh"
+		}
+	},
+	"dependencies": {
+		"brslint": "^0.2.1",
+		"node-fetch": "^2.6.1",
+		"roku-deploy": "^3.2.3",
+		"zip-folder": "^1.0.0"
+	},
+	"devDependencies": {
+		"@rokucommunity/bslint": "^0.6.0",
+		"brighterscript": "^0.41.5",
+		"colors": "^1.1.2",
+		"del": "^2.0.2",
+		"fs": "0.0.2",
+		"husky": "^4.3.0",
+		"mkdirp": "^0.5.5",
+		"node-promise": "latest",
+		"request": "^2.88.2",
+		"rooibos-roku": "^4.4.2",
+		"underscore": "^1.11.0",
+		"yargs": "^3.15.0"
+	}
+}

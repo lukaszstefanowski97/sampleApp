@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name="MainScene"
+           extends="Scene">
+    <script type="text/brightscript" uri="pkg:/source/utils/utils.brs"/>
+
+    <interface>
+        <field id="allowKeyPress" type="boolean" value="true"/>
+        <function name="showWelcomeScreen"/>
+    </interface>
+
+    <children>
+        <Rectangle
+			id="backgroundBorder"
+			opacity="0.6"
+			width="880"
+			height="101"
+            color="#FFFFFF" />
+    </children>
+
+    <script type="text/brightscript" uri="./MainScene.brs"/>
+</component>

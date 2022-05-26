@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="WelcomeScreen"
+           extends="Group">
+    <script type="text/brightscript"
+            uri="./WelcomeScreen.brs"/>
+    <script type="text/brightscript"
+            uri="pkg:/source/utils/utils.brs"/>
+
+        <interface>
+                <function name="showKeyboard"/>
+        </interface>
+
+    <children>
+        <Rectangle
+                id="background"
+                translation="[0, 0]"
+                width="1920"
+                height="1080"
+        />
+        <Label
+                id="header"
+                translation="[490, 150]"
+                width="300"
+                height="40"
+                horizAlign="center" />
+        <Label
+                id="currentEmail"
+                translation="[390, 230]"
+                width="500"
+                height="40"
+                horizAlign="center" />
+
+        <CustomInput 
+                id="input"
+                translation="[440, 290]" />
+
+        <Label
+                id="message"
+                translation="[340, 390]"
+                width="600"
+                height="40"
+                horizAlign="center"
+                vertAlign="center" />
+
+        <CustomButton 
+                id="button"
+                translation="[490, 430]"
+                width="300"
+                height="50" />
+
+        <Label 
+                id="footer"
+                translation="[240, 630]"
+                width="800"
+                height="60"
+                horizAlign="center"
+                visible="false" />
+        
+    </children>
+</component>

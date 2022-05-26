@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component
+    name="CustomButton"
+    extends="Group">
+
+  <script
+      type="text/brightscript"
+      uri="./CustomButton.brs" />
+  <script
+      type="text/brightscript"
+      uri="pkg:/source/utils/utils.brs" />
+
+  <interface>
+    <field
+        id="text"
+        type="string"
+        onChange="onTextChanged" />
+    <field
+        id="height"
+        type="integer"
+        onChange="onHeightChanged" />
+    <field
+        id="width"
+        type="integer"
+        onChange="onWidthChanged" />
+    <field
+        id="hasBorder"
+        type="boolean"
+        value="false"
+        onChange="onHasBorderChanged" />
+    <field
+        id="itemSelected"
+        type="string"
+        value=""
+        alwaysNotify="true" />
+    <field
+        id="fontSize"
+        type="integer"
+        onChange="onFontSizeChanged" />
+    <field
+        id="iconUri"
+        type="string"
+        onChange="onIconUriChanged" />
+    <field
+        id="iconAlign"
+        type="integer"
+        onChange="onIconAlignChanged" />
+    <field
+      id="unFocusedColor"
+      type="string"
+      onChange="onUnFocusedColorChanged"/>
+    <field
+      id="focusedColor"
+      type="string"
+      onChange="onFocusedColorChanged"/>
+  </interface>
+
+  <children>
+
+    <Poster id="btnBorder">
+      <Rectangle id="btnFocused">
+        <Label id="btnLabelFocus" />
+      </Rectangle>
+
+      <Group id="btnUnfocused">
+        <Rectangle id="unFocusedRct"/>
+        <Label id="btnLabelUnfocus" />
+      </Group>
+      <Poster
+          id="btnIcon"
+          translation="[46,21]"
+          width="26"
+          height="26" />
+    </Poster>
+
+  </children>
+
+</component>

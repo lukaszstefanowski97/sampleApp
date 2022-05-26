@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="CustomInput" extends="Group">
+
+       <script type="text/brightscript" uri="./CustomInput.brs" />
+       <script type="text/brightscript" uri="pkg:/source/utils/utils.brs" />
+
+       <interface>
+              <field id="text" type="string" onChange="onTextChanged" />
+              <field id="placeholder" type="string" onChange="onPlaceholderChanged" />
+       </interface>
+
+       <children>
+
+              <Rectangle 
+                     id="focusBoundingRectangle"
+                     width="404"
+                     height="58"
+                     visible="false" />
+              <Rectangle 
+                     id="inputBackground"
+                     width="400"
+                     height="54"
+                     translation="[2, 2]" />
+              <Label 
+                     id="inputLabel"
+                     translation="[20, 2]"
+                     width="400"
+                     height="54"
+                     vertAlign="center" />
+              <Label
+                     id="placeholderLabel"
+                     translation="[20, 2]"
+                     width="400"
+                     height="54"
+                     vertAlign="center" />
+
+       </children>
+
+</component>

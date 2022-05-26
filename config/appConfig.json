@@ -1,0 +1,51 @@
+{
+    "texts": {
+        "welcomeScreen": {
+            "enterEmailHeader": "Enter email address",
+            "emailInputPlaceholder": "email address",
+            "enterEmailMessage": "By signing up, you agree to our privact policy and terms of use",
+            "continueButtonText": "Continue",
+            "enterCodeHeader": "Check your email and enter the code provided",
+            "emailLabel": "Email: ",
+            "welcomeHeader": "Welcome!",
+            "welcomeMessage": "Time to start watching!",
+            "startWatchingButtonText": "Start Watching",
+            "footer": "Check your email to find ouy how to login on other devices"
+        },
+        "exitPopup": {
+            "message": "Are you sure you want to exit?",
+            "okButton": "Yes",
+            "cancelButton": "No"
+        }
+    }, 
+    "colors": {
+        "highlight": "#58cc64",
+        "background": {
+            "background": "#082434",
+            "variant": "#203c4c",
+            "highlight": "#587488"
+        },
+        "white": "#FFFFFF"
+    },
+    "settings": {
+        "screenComponents": {
+          "border": {
+            "uri": "pkg:/images/button_border.9.png",
+            "focusable": true,
+            "height": 80
+          },
+          "backgroundFocused": {
+            "focusable": true,
+            "width": 200,
+            "height": 80,
+            "blendingEnabled": true
+          },
+          "label": {
+            "height": 80,
+            "width": 200,
+            "vertAlign": "center",
+            "horizAlign": "center"
+          }
+        }
+      }
+}

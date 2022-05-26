@@ -1,0 +1,11 @@
+{
+	"deploy": true,
+	"files": [
+		"source/**/*.*",
+		"components/**/*.*",
+		"images/**/*.*",
+		"fonts/**/*.*",
+		"config/**/*.*",
+		"manifest"
+	]
+}
