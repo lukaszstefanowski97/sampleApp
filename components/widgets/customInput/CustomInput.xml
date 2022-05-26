@@ -7,6 +7,8 @@
        <interface>
               <field id="text" type="string" onChange="onTextChanged" />
               <field id="placeholder" type="string" onChange="onPlaceholderChanged" />
+
+              <function name="clear" />
        </interface>
 
        <children>

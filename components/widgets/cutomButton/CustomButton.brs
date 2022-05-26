@@ -51,8 +51,8 @@ function init() as void
     })
     m.btnLabelFocus.color = m.colors.white
     m.btnLabelUnfocus.color = m.colors.white
-    m.btnLabelFocus.font = getHeaderFont()
-    m.btnLabelUnfocus.font = getHeaderFont()
+    m.btnLabelFocus.font = getButtonFont()
+    m.btnLabelUnfocus.font = getButtonFont()
 
     m.top.observeField("focusedChild", "setFocus")
     setFocus()
@@ -180,7 +180,7 @@ end sub
 sub onKeyEvent(key as string, press as boolean) as boolean
 
     if (getScene().allowKeyPress = true and press = true and key = "OK" )
-        m.top.itemSelected = m.top.id
+        m.top.getParent().callFunc("finishStep")
         return true
     end if
 

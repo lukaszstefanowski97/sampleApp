@@ -47,10 +47,19 @@ end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean
     if getScene().allowKeyPress = true and press = true and key = "OK"
-        m.top.getParent().callFunc("showKeyboard")
+        welcomeScreen = m.top.getParent()
+        if welcomeScreen.currentStep = 1
+            m.top.getParent().callFunc("showKeyboard")
+        else if welcomeScreen.currentStep = 2
+            m.top.getParent().callFunc("showPinpad")
+        end if
         return true
     end if
 
     return false
 end function
 
+sub clear()
+    m.inputLabel.text = ""
+    m.placeholderLabel.text = ""
+end sub

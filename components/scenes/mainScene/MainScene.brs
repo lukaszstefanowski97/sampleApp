@@ -24,3 +24,7 @@ sub showWelcomeScreen(showParam as string)
         m.welcomeScreen = invalid
     end if
 end sub
+
+sub hideWelcomeScreen()
+    showWelcomeScreen("destroy")
+end sub

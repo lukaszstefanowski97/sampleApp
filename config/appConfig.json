@@ -10,7 +10,8 @@
             "welcomeHeader": "Welcome!",
             "welcomeMessage": "Time to start watching!",
             "startWatchingButtonText": "Start Watching",
-            "footer": "Check your email to find ouy how to login on other devices"
+            "footer": "Check your email to find ouy how to login on other devices",
+            "invalidEmail": "Invalid email address"
         },
         "exitPopup": {
             "message": "Are you sure you want to exit?",
@@ -25,7 +26,8 @@
             "variant": "#203c4c",
             "highlight": "#587488"
         },
-        "white": "#FFFFFF"
+        "white": "#FFFFFF",
+        "error": "#f2132a"
     },
     "settings": {
         "screenComponents": {
@@ -47,5 +49,6 @@
             "horizAlign": "center"
           }
         }
-      }
+      },
+      "emailRegex": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
 }

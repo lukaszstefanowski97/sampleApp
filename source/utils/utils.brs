@@ -129,6 +129,13 @@ function getMessageFont()
     })
 end function
 
+function getButtonFont()
+    return createNode("Font", {
+        "uri": "pkg:/fonts/RTLUnitedText-Bold.ttf"
+        "size": 24
+    })
+end function
+
 function getHeaderFont()
     return createNode("Font", {
         "uri": "pkg:/fonts/RTLUnitedText-Bold.ttf"

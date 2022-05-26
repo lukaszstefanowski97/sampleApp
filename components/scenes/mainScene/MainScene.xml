@@ -7,15 +7,18 @@
     <interface>
         <field id="allowKeyPress" type="boolean" value="true"/>
         <function name="showWelcomeScreen"/>
+        <function name="hideWelcomeScreen" />
     </interface>
 
     <children>
-        <Rectangle
-			id="backgroundBorder"
-			opacity="0.6"
-			width="880"
-			height="101"
-            color="#FFFFFF" />
+        <Label
+            id="mainScenePlaceholder"
+            width="500"
+            height="30"
+            horizAlign="center"
+            vertAlign="center"
+            translation="[390, 345]"
+            text="Main scene placeholder" />
     </children>
 
     <script type="text/brightscript" uri="./MainScene.brs"/>
